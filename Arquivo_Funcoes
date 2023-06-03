@@ -20,10 +20,10 @@ while True:
     #criando os inputs do usuario par as notas de corte:
     print("----------Digite as notas minimas para selecionar o candidato aprovado...")
 
-    nota_minimapataoteste_e = int(input("Digite o resultado desejado para entrevista:"))
-    nota_minimaparaoteste_t = int(input("Digite o resultado desejado para o  teste Teórico:"))
-    nota_minimaparaoteste_p= int(input("Digite o resultado desejado para teste Prático:"))
-    nota_minimaparaoteste_s= int(input("Digite o resultado desejado para soft Skills:"))
+    nota_minimapataoteste_e = int(input("----Digite o resultado desejado para entrevista:"))
+    nota_minimaparaoteste_t = int(input("----Digite o resultado desejado para o  teste Teórico:"))
+    nota_minimaparaoteste_p= int(input("-----Digite o resultado desejado para teste Prático:"))
+    nota_minimaparaoteste_s= int(input("-----Digite o resultado desejado para soft Skills:"))
     #Criandno uma variavel com os candidatos Aprovados
     Aprovados = busca_candidatos(nota_minimaparaoteste_s,nota_minimaparaoteste_p,nota_minimaparaoteste_t,nota_minimapataoteste_e)
     

@@ -7,7 +7,7 @@ candidatos = [{"candidatodoBrasil":"luis", "e":5, "t":10, "p":6, "s":8},
               {"candidatodaIndonesia":"Lis", "e":10, "t":10, "p":8, "s":9},]
 
 #criando a funcao que busca de acordo com o critrio do candidato.
-def busca(e,t,p,s):
+def busca_candidatos(e,t,p,s):
     aprovados = []
     for candidato in candidatos:
 #Verificando se as notas dos usuario sao compativeis com o resultado esperado.
@@ -23,7 +23,7 @@ nota_minimaparaoteste_t = int(input("Digite o resultado desejado para o  teste T
 nota_minimaparaoteste_p= int(input("Digite o resultado desejado para teste Prático:"))
 nota_minimaparaoteste_s= int(input("Digite o resultado desejado para soft Skills:"))
 #Criandno uma variavel com os candidatos Aprovados
-Aprovados = busca(nota_minimaparaoteste_s,nota_minimaparaoteste_p,nota_minimaparaoteste_t,nota_minimapataoteste_e)
+Aprovados = busca_candidatos(nota_minimaparaoteste_s,nota_minimaparaoteste_p,nota_minimaparaoteste_t,nota_minimapataoteste_e)
 print(Aprovados)
 print(f"-------------------As notas desejadas tem que ter esse formato ex_tx_px_sx-------------------")
 print(f"Notas inseridas: E{nota_minimapataoteste_e} _T{nota_minimaparaoteste_t} _P{nota_minimaparaoteste_p}_S{nota_minimaparaoteste_s}")
